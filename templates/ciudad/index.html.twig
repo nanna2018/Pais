@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h1>Ciudades</h1>
+<ul>
+    {% for ciudad in ciudades %}
+        <li>{{ ciudad.nombre}}--{{ciudad.habitantes}}--{{ciudad.cpostal}}</li>
+
+
+    {% endfor %}
+     
+</ul>
+
+{#{{dump(productos)}}#}
+
+<a class="ciudad"href="{{path('ciudad_nuevo')}}">Añadir ciudad</a>
+<a class="provincia"href="{{path('provincia_lista')}}">lista de provincias</a>
+
+{% endblock %}

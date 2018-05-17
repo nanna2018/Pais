@@ -1,0 +1,15 @@
+a.ciudad{
+	background-color: #00FFFF;
+	color: white;
+	font-size: bold;
+
+}
+a.provincia{
+	background-color: #A52A2A;
+	color: white;
+	font-size: bold;
+
+}
+table{
+	border-top: black;
+}

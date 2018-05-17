@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+<h1>Lista de provincias</h1>
+<ul>
+    {% for provincia in provincias %}
+        <li>{{ provincia.nombre}}</li>
+
+
+    {% endfor %}
+     
+</ul>
+<table>
+<tr>
+<th>Provincia</th>
+<th>Badajoz</th>
+ <th>Caceres</th>
+<tr>
+<td>Habiantes</td>
+<td>403.000</td>
+<td>685.000</td>
+</tr>
+<tr>
+</table>
+
+<a href="{{path('ciudad_nuevo')}}">Añadir ciudad</a>
+<a href="{{path('provincia_lista')}}">lista de provincias</a>
+{#<img src="playa.jpg">#}
+
+{% endblock %}
